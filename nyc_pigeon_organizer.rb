@@ -16,4 +16,5 @@ data.each do |property, attribute|
   end
  end
 end
+new_hash
 end
