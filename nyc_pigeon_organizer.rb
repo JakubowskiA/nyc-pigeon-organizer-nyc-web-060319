@@ -10,6 +10,9 @@ data.each do |property, attribute|
     if !new_hash[name].include?(property)
       new_hash[name][property] = {}
     end
+    if !new_hash[name][property].include?(attribute)
+      new_hash[name][property] << attribute
+    end
   end
  end
 end
