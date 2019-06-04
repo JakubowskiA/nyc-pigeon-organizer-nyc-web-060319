@@ -6,3 +6,4 @@ data.each do |property, attribute|
   binding.pry
 end
 end
+end
