@@ -7,7 +7,7 @@ data.each do |property, attribute|
     if !new_hash.include?(name)
       new_hash[name] = {}
     end
-    if !new_hash.include?(property)
+    if !new_hash[name].include?(property)
       new_hash[name][property] = {}
     end
   end
