@@ -8,7 +8,7 @@ data.each do |property, attribute|
       new_hash[name] = {}
     end
     if !new_hash[name].has_key?(property)
-      new_hash[name][property] = {}
+      new_hash[name][property] = [{}]
     end
     if !new_hash[name][property].include?(detail)
       binding.pry
