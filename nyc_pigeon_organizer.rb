@@ -12,7 +12,7 @@ data.each do |property, attribute|
     end
     if !new_hash[name][property].include?(detail)
       #binding.pry
-      new_hash[name][property] << detail
+      new_hash[name][property] << detail.to_s
 
     end
   end
